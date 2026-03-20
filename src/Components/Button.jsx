@@ -7,7 +7,7 @@ export default function Button({
     onClick = null,
     download = false,
 }) {
-    const base = 'px-3 py-1 text-sm rounded-full flex flex-nowrap gap-2 items-center cursor-pointer transition-colors';
+    const base = 'px-3 py-1 rounded-full flex flex-nowrap gap-2 items-center cursor-pointer transition-colors';
     const styles = {
         primary: {
             default:  'bg-yellow-500 dark:bg-indigo-600 hover:bg-yellow-600 dark:hover:bg-indigo-700 text-white',

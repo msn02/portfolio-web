@@ -34,7 +34,7 @@ export default function Home() {
                             View my Work
                         </Button>
                         <Button
-                            color="primary"
+                            color="secondary"
                             state="outlined"
                             icon={<ArrowDownToLine size={16} />}
                             href="/files/Niones_CV.pdf"
