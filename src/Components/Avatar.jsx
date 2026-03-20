@@ -1,10 +1,12 @@
+import misty from '/images/Misty.png';
+
 export default function Avatar() {
     return (
         <img
-            src="/images/Misty.png"
+            src={misty}
             alt="Misty Shaine Niones"
             className="
-                size-40 rounded-lg
+                size-40 rounded-full
                 absolute -translate-y-3/4
                 left-1/2 -translate-x-1/2
                 lg:left-auto lg:-translate-x-0
@@ -12,4 +14,4 @@ export default function Avatar() {
             "
         />
     );
-}    
+}
