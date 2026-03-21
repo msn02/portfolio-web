@@ -31,8 +31,28 @@ export default function Button({
         return <div className={classes} aria-disabled="true">{content}</div>;
     }
     if (href) {
+        const handleDownload = async () => {
+            if (download) {
+                const response = await fetch(href);
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = typeof download === 'string' ? download + '.pdf' : 'download.pdf';
+                a.click();
+                window.URL.revokeObjectURL(url);
+                return;
+            }
+            window.location.href = href;
+        };
+
         return (
-            <a href={href} className={classes} download={download}>
+            <a
+                href={href}
+                className={classes}
+                onClick={download ? (e) => { e.preventDefault(); handleDownload(); } : undefined}
+                download={download || undefined}
+            >
                 {content}
             </a>
         );
