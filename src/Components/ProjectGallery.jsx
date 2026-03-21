@@ -66,7 +66,7 @@ const webdevProjects = [
 const graphicDesProjects = [
     {
         title: 'Denso Job Fair',
-        // description: 'Short description for the card.',
+        description: 'Event poster for a virtual Job Fair in partnership with Denso Techno Philippines Inc.',
         images: [
             'images/gd/denso_22.jpg',
         ],
