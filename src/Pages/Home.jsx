@@ -37,8 +37,8 @@ export default function Home() {
                             color="secondary"
                             state="outlined"
                             icon={<ArrowDownToLine size={16} />}
-                            href="/files/Niones_CV.pdf"
-                            download
+                            href="/files/NionesCV_2026.pdf"
+                            download="MSNiones_CV"
                         >
                             Download CV
                         </Button>
