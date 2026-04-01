@@ -71,7 +71,7 @@ export default function WDModal({ project, onClose }) {
                                     rel="noopener noreferrer"
                                     className="dark:text-white hover:underline text-xs rounded-full transition-colors cursor-pointer"
                                 >
-                                    View Project in Figma <ArrowUpRight size={18} className="inline-block ml-1" />
+                                    View Project in {project.tool}<ArrowUpRight size={18} className="inline-block ml-1" />
                                 </a>
                             </div>
                         )}
@@ -79,7 +79,7 @@ export default function WDModal({ project, onClose }) {
                     <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
                         {project.fullDescription}
                     </p>
-                    <div className="flex flex-wrap gap-1 mb-4">
+                    <div className="flex flex-wrap gap-1 mb-4 md:mb-0">
                         {project.tags.map(tag => (
                             <span
                                 key={tag}
@@ -97,7 +97,7 @@ export default function WDModal({ project, onClose }) {
                                 rel="noopener noreferrer"
                                 className="dark:text-white hover:underline text-xs rounded-full transition-colors cursor-pointer"
                             >
-                                View Project in Figma <ArrowUpRight size={18} className="inline-block ml-1" />
+                                View Project in {project.tool}<ArrowUpRight size={18} className="inline-block ml-1" />
                             </a>
                         </div>
                     )}
