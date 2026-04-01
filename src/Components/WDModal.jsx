@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ArrowUpRight } from 'lucide-react';
 
 export default function WDModal({ project, onClose }) {
     const [current, setCurrent] = useState(0);
@@ -59,13 +59,27 @@ export default function WDModal({ project, onClose }) {
                 </div>
 
                 <div className="p-5">
-                    <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                    <div className="flex flex-row justify-between">
+                        <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                         {project.title}
-                    </h2>
+                        </h2>
+                        {project.link && (
+                            <div className="hidden md:block">
+                                <a 
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="dark:text-white hover:underline text-xs rounded-full transition-colors cursor-pointer"
+                                >
+                                    View Project in Figma <ArrowUpRight size={18} className="inline-block ml-1" />
+                                </a>
+                            </div>
+                        )}
+                    </div>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
                         {project.fullDescription}
                     </p>
-                    <div className="flex flex-wrap gap-1">
+                    <div className="flex flex-wrap gap-1 mb-4">
                         {project.tags.map(tag => (
                             <span
                                 key={tag}
@@ -75,6 +89,18 @@ export default function WDModal({ project, onClose }) {
                             </span>
                         ))}
                     </div>
+                    {project.link && (
+                        <div className="block md:hidden">
+                            <a 
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="dark:text-white hover:underline text-xs rounded-full transition-colors cursor-pointer"
+                            >
+                                View Project in Figma <ArrowUpRight size={18} className="inline-block ml-1" />
+                            </a>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

@@ -22,6 +22,7 @@ const webdevProjects = [
             'images/webdev/quarta_9.png',
         ],
         tags: ['UI/UX Design', 'Finance', 'Figma'],
+        link: 'https://www.figma.com/proto/0nXsXQZx18dWZLhxsMbBCD/BU-E-Receipt-System--Copy-?node-id=2665-1047&p=f&t=N0Wg3WgDrXa28VyC-1&scaling=scale-down-width&content-scaling=fixed&page-id=2665%3A144',
     },
     {
         title: 'USC Website',
@@ -35,9 +36,12 @@ const webdevProjects = [
             'images/webdev/usc_5.png',
             'images/webdev/usc_6.png',
             'images/webdev/usc_7.png',
+            'images/webdev/usc_9.png',
+            'images/webdev/usc_10.png',
             'images/webdev/usc_8.png',
         ],
         tags: ['UI/UX Design', 'Content Management System', 'Figma'],
+        link: 'https://www.figma.com/proto/1ohDS8v76nvASaRhfwkHOW/USC-Website-v2.0--Copy-?node-id=634-1927&p=f&t=3Bek5ZFKV9o6yGQv-1&scaling=scale-down-width&content-scaling=fixed&page-id=5%3A5',
     },
     {
         title: 'Online Voting System',
@@ -46,10 +50,10 @@ const webdevProjects = [
         images: [
             'images/webdev/evoting_1.png',
             'images/webdev/evoting_2.png',
-            'images/webdev/evoting_4.png',
             'images/webdev/evoting_3.png',
         ],
         tags: ['UI/UX Design', 'E-Voting', 'Figma', 'Internship'],
+        link: 'https://www.figma.com/proto/5dz6Q2KxBRNSo6oxNJR2Ty/BU-Online-Voting-System-v2?node-id=1205-1210&t=B1tHWu6l9VTid0fO-1&scaling=scale-down&content-scaling=responsive&page-id=1205%3A1208&starting-point-node-id=1205%3A1210',
     },
     {
         title: 'Inventory and Sales Invoice Application',

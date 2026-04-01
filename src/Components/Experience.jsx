@@ -13,13 +13,13 @@ export default function Experience() {
               type="Contract"
               current={true}
           />
-          <ExpCard
+          {/* <ExpCard
               title="Tutor"
               company="CMB Review and Tutorial Center"
               date="Aug 2025 - Present"
               type="Part-Time"
               current={false}
-          />
+          /> */}
           <ExpCard
               title="UI/UX Designer"
               company="Bicol University - University Student Council"
