@@ -3,12 +3,15 @@ export default function AboutMe() {
     <div>
       <h1 className="text-2xl font-bold text-gray-900 dark:text-white">About Me</h1>
       <p className="text-gray-700 dark:text-gray-300 mt-4">
-        Hi! I'm Shaine, a UI/UX designer and frontend developer based in Albay, Philippines. I specialize in UI/UX design and web development. Currently working as a Junior Programmer at Bicol University.</p>
+        Hi! I'm Misty, a UI/UX Designer based in Albay, Philippines, with 2 years of experience designing interfaces and prototypes for real, deployed projects. I care about making things look good and work well, whether it's a web app, a mobile screen, or a simple user flow.</p>
       <p className="text-gray-700 dark:text-gray-300 mt-4">
-        I develop prototypes that merge aesthetics with functionality. My experience includes hands-on experience in system assessments, prototyping, and collaborative work across real projects. Right now, I'm exploring new tools in UI/UX design, while on the development side, I'm diving into React JS and expanding my frontend stack.
+        I do graphic design on the side. I create social media graphics, infographics, tarpaulins, and other marketing materials. I enjoy the creative side of design just as much as the technical side.
       </p>
       <p className="text-gray-700 dark:text-gray-300 mt-4">
-        My goal is to grow into roles that blend technical skills with problem-solving and contribute to projects that make a real impact.
+        Outside of design, I also do frontend development and I'm currently expanding my skills in React JS. I'm always open to learning new tools and growing through the work I take on.
+      </p>
+      <p className="text-gray-700 dark:text-gray-300 mt-4">
+        I'm working toward becoming a well-rounded designer. Someone who can handle the visuals, understand the tech, and think about how it all connects to the people using it.
       </p>
     </div>
     );
